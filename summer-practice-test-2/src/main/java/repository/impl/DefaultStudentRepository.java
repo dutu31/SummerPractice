@@ -1,11 +1,12 @@
 package repository.impl;
 
 import model.StudentModel;
+import org.springframework.stereotype.Repository;
 import repository.StudentRepository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class DefaultStudentRepository implements StudentRepository {
 
     @Override
