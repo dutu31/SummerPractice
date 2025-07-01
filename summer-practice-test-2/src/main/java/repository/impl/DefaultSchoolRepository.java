@@ -2,12 +2,13 @@ package repository.impl;
 
 import model.SchoolModel;
 import model.StudentModel;
+import org.springframework.stereotype.Repository;
 import repository.SchoolRepository;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+@Repository
 public class DefaultSchoolRepository implements SchoolRepository {
     @Override
     public List<SchoolModel> getAll() {
