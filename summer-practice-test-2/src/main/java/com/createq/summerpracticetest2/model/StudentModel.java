@@ -1,16 +1,30 @@
-package model;
+package com.createq.summerpracticetest2.model;
 
+import jakarta.persistence.*;
+
+
+@Entity
+@Table(name = "students")
 public class StudentModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private int age;
+
+    @ManyToOne
+    @JoinColumn(name="school_id")
     private SchoolModel school;
 
     public int getId()
     {
         return id;
     }
-    public void setId(int i)
+    public void setId(int id)
     {
         this.id=id;
     }

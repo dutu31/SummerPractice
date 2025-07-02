@@ -1,11 +1,10 @@
-package service.impl;
+package com.createq.summerpracticetest2.service.impl;
 
-import model.StudentModel;
+import com.createq.summerpracticetest2.model.StudentModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.StudentRepository;
-import repository.impl.DefaultStudentRepository;
-import service.StudentService;
+import com.createq.summerpracticetest2.repository.StudentRepository;
+import com.createq.summerpracticetest2.service.StudentService;
 
 import java.util.List;
 @Service
@@ -23,6 +22,6 @@ public class DefaultStudentSerivce implements StudentService {
 
     @Override
     public List<StudentModel> getAll() {
-        return studentRepository.getAll();
+        return studentRepository.findAll();
     }
 }
