@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 @Component
 public class StudentConverter {
-    StudentDTO convert(StudentModel studentModel) {
+   public StudentDTO convert(StudentModel studentModel) {
         StudentDTO dto=new StudentDTO();
         dto.setId(studentModel.getId());
         dto.setName(studentModel.getName());
