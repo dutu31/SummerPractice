@@ -11,7 +11,7 @@
 <head>
     <link href="<c:url value="/static/css/common.css"/>" rel="stylesheet" type="text/css">
     <title>All students</title>
-    <!-- de adaugat css -->
+
 
 </head>
 <body>

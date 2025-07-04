@@ -18,7 +18,7 @@
     <c:forEach items="${schools}" var="school">
         <h2>${school.name}</h2>
         <c:forEach items="${school.students}" var="students">
-            <ul>${students.name}</ul>
+            <ul>${students.name}</ul>>
         </c:forEach>
     </c:forEach>
 </ul>
