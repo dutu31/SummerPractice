@@ -21,7 +21,7 @@ public class StudentController {
     public String getAll(Model model) {
        List<StudentDTO> students=studentFacade.getAll();
        model.addAttribute("students",students);
-       return "";
+       return "allStudent";
 
     }
 }

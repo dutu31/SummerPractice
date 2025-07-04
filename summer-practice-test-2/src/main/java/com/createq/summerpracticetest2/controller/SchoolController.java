@@ -22,6 +22,6 @@ public class SchoolController {
     public String getAll(Model model) {
         List<SchoolDTO> schools=schoolFacade.getAll();
         model.addAttribute("schools",schools);
-        return "";
+        return "allSchools";
     }
 }
